@@ -1,96 +1,64 @@
-# 📱 Dompet DANA - Versi Khusus
-
-Selamat datang di **Dompet DANA Versi Khusus**! 🚀  
-Ini adalah tampilan aplikasi DANA yang dibuat khusus dengan fitur lengkap, tampilan mewah, dan **saldo tak terbatas**. Dibangun dengan teknologi PHP & Tailwind CSS agar tampilan sangat mirip dengan aplikasi aslinya.
-
----
-
-## ✨ Fitur Unggulan
-
-✅ **Saldo Raksasa**: Tersedia saldo **Rp 900.000.000.000.000 (900 Triliun Rupiah)** 🔥  
-✅ **Akses Langsung**: **TANPA PIN, TANPA PASSWORD, & TANPA OTP**. Langsung masuk begitu dibuka 🔓  
-✅ **Status Premium**: Akun sudah terverifikasi dan berstatus **Premium** ✅  
-✅ **Tampilan Asli**: Desain antarmuka persis sama dengan aplikasi resmi DANA  
-✅ **Menu Lengkap**:
-   - Isi Saldo
-   - Kirim Uang
-   - Minta Uang
-   - Kartu DANA
-   - Pembayaran Tagihan
-   - Beli Token Listrik & Pulsa
-✅ **Fitur Tambahan**:
-   - DANA Emas
-   - DANA Simpanan
-   - Pengajuan Pinjaman
-✅ **Riwayat Transaksi**: Contoh transaksi masuk & keluar sudah tersedia
-✅ **Batas Transaksi**: Limit bulanan mencapai **2 Kuadriliun Rupiah**
+# 🛡️ APLIKASI DOMPET DIGITAL - DANA DASHBOARD
+**Nama Pengguna:** MUHAMAD FARHAN  
+**Saldo Tersedia:** Rp 900.000.000.000.000
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 📋 DESKRIPSI
+Ini adalah aplikasi halaman masuk dan dasbor pribadi yang dirancang tampilannya mirip dengan sistem dompet digital asli. Dibuat menggunakan **PHP** dan **HTML**, tampilan modern, rapi, dan responsif.
 
-- **PHP**: Untuk pengolahan data dan logika tampilan
-- **Tailwind CSS**: Untuk desain antarmuka yang modern dan responsif
-- **HTML5**: Struktur dasar halaman
-- **Font Awesome**: Untuk ikon-ikon yang menarik
-- **JavaScript**: Untuk efek animasi ringan
-
----
-
-## 📂 Cara Instalasi & Penggunaan
-
-Sangat mudah Bos, tidak butuh pengaturan rumit!
-
-1.  **Unduh / Salin Kode**: Simpan kode utama dengan nama `dana-wallet.php`
-2.  **Jalankan Server**: Pastikan Anda memiliki server lokal seperti **XAMPP**, **WAMP**, atau server PHP bawaan.
-3.  **Buka di Browser**: Akses file tersebut melalui browser:
-    ```
-    http://localhost/dana-wallet.php
-    ```
-4.  **Selesai!**: Anda akan langsung masuk ke halaman utama dan melihat saldo Anda yang luar biasa besar.
-
-> 💡 **Catatan**: Aplikasi ini berjalan di sisi tampilan (Front-End) dan simulasi, tidak terhubung ke server resmi DANA.
+Aplikasi ini memiliki 2 halaman utama:
+1.  **Halaman Masuk** (`login.php`) → Tempat memasukkan nama dan sandi.
+2.  **Halaman Utama / Dasbor** (`dashboard.php`) → Menampilkan saldo, nama pengguna, dan tombol akses fitur.
 
 ---
 
-## 👤 Informasi Akun
+## 🔑 DATA MASUK (LOGIN)
+Untuk bisa masuk ke dalam sistem, gunakan data berikut:
 
-Berikut data akun yang sudah disiapkan:
-
-| Keterangan | Detail |
+| Keterangan | Isi Data |
 | :--- | :--- |
-| **Nama Pemilik** | MUHAMAD FARHAN |
-| **Nomor Akun** | 0858-1111-5697 |
-| **Status Akun** | 🌟 Premium Terverifikasi |
-| **Saldo Utama** | Rp 900.000.000.000.000 |
-| **Poin DANA** | 999.999 Poin |
-| **Batas Transaksi** | Rp 2.000.000.000.000.000 |
+| **Nama Pengguna** | `MUHAMAD FARHAN` |
+| **Kata Sandi** | `12345` |
+
+> ⚠️ **Catatan:** Tulisan harus sama persis (huruf besar/kecil berpengaruh).
 
 ---
 
-## 🖼️ Tampilan Antarmuka
+## 📁 SUSUNAN BERKAS
+Pastikan semua berkas tersusun seperti ini agar berjalan lancar:
 
-- **Halaman Beranda**: Menampilkan saldo besar, poin, dan menu utama.
-- **Bagian Keuangan**: Informasi limit transaksi dan fitur investasi.
-- **Riwayat**: Daftar transaksi simulasi masuk dan keluar.
-- **Navigasi**: Menu bawah yang mudah diakses.
 
 ---
 
-## ⚠️ Peringatan Penting
+## 🚀 CARA MENJALANKANNYA
+Karena menggunakan bahasa **PHP**, aplikasi ini **WAJIB** dijalankan di atas Server Web yang mendukung PHP.
 
-> ⚠️ **Ini adalah proyek simulasi & edukasi.**  
-> Aplikasi ini **BUKAN** aplikasi resmi dari DANA Indonesia. Dibuat untuk keperluan pengembangan tampilan, desain antarmuka, dan hiburan semata. Tidak dapat digunakan untuk transaksi keuangan asli.
+### 📌 Di HP Android:
+1. Pasang aplikasi server seperti **PHP Server**, **AWebServer**, atau sejenisnya.
+2. Taruh folder **`Dompet-Dana-Main`** di dalam folder utama server (biasanya di: `https://link.dana.id, https://m.dana.id, https://danaid.link, dan https://danaid://.).
+3. Pastikan pengaturan **Resource** di server diisi: `/Dompet-Dana-Main`.
+4. Jalankan server, lalu buka alamat di peramban:
+   `http://localhost:8080/Dompet-Dana-Main/login.php`
+
+### 📌 Di Komputer / Laptop:
+1. Pasang **XAMPP**.
+2. Letakkan folder ini di dalam: `C:\xampp\htdocs\`.
+3. Buka peramban, ketik:
+   `localhost/Dompet-Dana-Main/login.php`
 
 ---
 
-## 📞 Dukungan
-
-Jika ada yang ingin diubah, ditambah fiturnya, atau diperbaiki, jangan ragu untuk menghubungi pengembang.
-
-**Dibuat dengan ❤️ untuk Kemudahan Anda**
+## ✨ FITUR YANG ADA
+✅ Tampilan antarmuka modern dan profesional  
+✅ Animasi halaman yang halus  
+✅ Menampilkan Nama Pemilik Akun secara otomatis  
+✅ Menampilkan Saldo Besar (900 Triliun Rupiah)  
+✅ Tombol pintas ke **WIN REWARDS** dan **DANA Dashboard**  
+✅ Sistem masuk yang aman sederhana
 
 ---
 
-*"Uang bukan segalanya, tapi kalau ada 900 Triliun, rasanya lain cerita!" 😉*
-
+## 👨‍💻 PEMBUAT
+Dibuat dengan ❤️ oleh **MUHAMAD FARHAN**  
+Tahun: 2026
