@@ -7,53 +7,7 @@ $poinDana = 999999;
 $limitBulanan = 2000000000000000; // 2 Kuadriliun
 $terpakai = 0;
 
-// FORMAT ANGKA AGAR RAPI
-function formatUang($angka) {
-    return number_format($angka, 0, ',', '.');
-}
-?>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DANA - Beranda</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    warnaDana: '#008DE8',
-                    warnaEmas: '#FFD700',
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .bayangan-dana {
-                box-shadow: 0 10px 30px rgba(0, 141, 232, 0.35);
-            }
-            .bayangan-emas {
-                box-shadow: 0 10px 30px rgba(255, 215, 0, 0.35);
-            }
-            .kaca {
-                background: rgba(255, 255, 255, 0.15);
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                border: 1px solid rgba(255, 255, 255, 0.2);
-            }
-            .teks-berkilau {
-                text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-            }
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
-
-    <!-- ==========================================
+==========================================
         BAGIAN ATAS - HEADER & PROFIL
         AKSES LANGSUNG TANPA KUNCI 🔓
     =========================================== -->
