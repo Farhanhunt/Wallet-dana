@@ -1,27 +1,29 @@
 <?php
-// Mengaktifkan session PHP untuk menyimpan status login
+// Mengaktifkan sesi PHP untuk menyimpan status login
 session_start();
 
-// 👇 INI YANG SUDAH SAYA BUATKAN 👇
+// USERNAME & PASSWORD (Menghapus spasi yang tidak sengaja di ujung teks)
 $username_benar = "MUHAMAD FARHAN";
 $password_benar = "12345";
 
-// 👇 SALDO 900 TRILIUN 👇
-$saldo = 900000000000000; 
+// SALDO 900 TRILIUN
+$saldo = 900000000000000;
 
 $pesan_error = "";
 
 // Memproses data ketika tombol login ditekan (Metode POST)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username_input = $_POST['username'];
+    // Trim digunakan untuk menghapus spasi tidak sengaja di awal/akhir input user
+    $username_input = trim($_POST['username']);
     $password_input = $_POST['password'];
 
-    // Validasi kecocokan username dan password
+    // Validasi kecocokan nama pengguna dan kata sandi
     if ($username_input === $username_benar && $password_input === $password_benar) {
-        // Jika benar, simpan status ke session dan alihkan ke halaman utama
+        // Jika benar, simpan status ke sesi dan alihkan ke halaman utama
         $_SESSION['sudah_login'] = true;
         $_SESSION['username'] = $username_input;
         $_SESSION['saldo_dana'] = $saldo;
+        
         header("Location: dashboard.php");
         exit;
     } else {
@@ -48,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <div class="login-container">
-    <h2>Form Login</h2>
+    <h2>Formulir Login</h2>
     
     <!-- Menampilkan pesan error jika login gagal -->
     <?php if (!empty($pesan_error)): ?>
@@ -57,10 +59,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Form input dikirimkan kembali ke file ini sendiri -->
     <form action="" method="POST">
-        <label for="username">Username</label>
+        <label for="username">Nama Pengguna</label>
         <input type="text" id="username" name="username" required>
 
-        <label for="password">Password</label>
+        <label for="password">Kata Sandi</label>
         <input type="password" id="password" name="password" required>
 
         <button type="submit">Masuk</button>
